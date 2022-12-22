@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    margin: 0;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color:black;
+    color: white;
+    margin-right: 0;
+    z-index: 1;
+}
+
+.navbar .nav-right {
+    margin-right: 1%;
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+.dropdown {
+    float:left;
+}
+
+.dropdown:hover {
+    background-color: gray;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 10%;
+    border:1px solid gray;
+    z-index:1
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.sea {
+    position: relative;
+    width: 100%;
+    min-height: fit-content;
+    max-height: fit-content;
+    margin-right: 0;
+}
+.sea img {
+    width: 100%;
+    min-height: 40vh;
+    max-height: 70vh;
+}
+.sea div {
+    position: absolute;
+    top: 85%;
+    left: 2%;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1%;
+    font-size: 25px;
+}
+.team {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.team-row1 p {
+    margin-top: 2%;
+}
+.team-row1 * {
+    width: 100% !important;
+    margin-left: 0 !important;
+    text-align: center;
+}
+.team-row2 {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+}
+.team-row2 div {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.team-row2 img {
+    border-radius: 100%;
+    width: 50%;
+}
+.team1 * {
+    margin-top: 4%;
+}
+.work {
+    margin-top: 2%;
+    padding: 2%;
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.work div {
+    width: 25%;
+    margin: 0.5%;
+}
+.description {
+    color: white !important;
+}
+.costumer {
+    background-color: white;
+    padding-bottom: 1.5%;
+}
+.costumer img{
+    width: 100%;
+}
+.costumer p,h2 {
+    margin-top: 6%;
+    margin-left: 6%;
+}
+.prices {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3%;
+    padding-top: 5%;
+}
+.plan:hover {
+    box-shadow:2px 2px 30px 2px rgb(182, 182, 182);
+}
+.price-text {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.price-text h1 {
+    margin-top: 2%;
+    font-weight: lighter;
+}
+.plans {
+    margin-top: 1%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.plan {
+    margin: 0.5%;
+    width: 33.333333333333%;
+    border: 1px solid rgb(197, 197, 197);
+    text-align: center;
+}
+.plan-title {
+    background-color: black;
+    color: white;
+    padding: 8% !important;
+    font-size:x-large;
+}
+.plan p {
+    border: 0.5px solid rgb(197, 197, 197);
+    padding: 4%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+.plan button {
+    background-color: #009688;
+    font-size: 1rem;
+    border: none;
+    color: white;
+    padding: 4%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.plan button:hover {
+    background-color: rgb(177, 176, 176);
+    color: black;
+}
+.info {
+    background-color: rgb(224, 224, 224);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.info p {
+    margin-top: 3%;
+}
+#contact-p {
+    font-size: 1.5rem;
+    text-decoration: underline #009688 6px;
+}
+#address-p {
+    font-size: 1.3rem;
+}
+.info i {
+    color: #009688;
+}
+.contact {
+    width: 40%;
+    padding: 1%;
+}
+.form {
+    padding: 1%;
+    width: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form input {
+    padding: 1%;
+    border: none;
+    border-bottom: 1px solid rgb(196, 195, 195);
+}
+.form * {
+    margin: 0.2%;
+}
+.send-checkbox {
+    display: flex;
+    justify-content: space-between;
+}
+.send-checkbox button {
+    background-color: black;
+    color: white;
+    padding: 1%;
+    font-size: 1rem;
+}
+.send-checkbox div {
+    width: 20%;
+}
+.street-image {
+    width: 100%;
+    min-height: fit-content;
+    max-height: fit-content;
+    margin-right: 0;
+}
+.street-image img {
+    width: 100%;
+    max-height: 100vh;
+    filter: grayscale(50%);
+}
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+.footer-center {
+    display: flex;
+    flex-direction: column;
+}
+.footer-center * {
+    text-align: center;
+    justify-content: center;
+    margin-top: 1%;
+}
+.links {
+    display: flex;
+    justify-content: row;
+    text-align: center;
+}
+.links button {
+    background-color: #009688;
+    color: white;
+    padding: 10%;
+    font-size: 1.2rem;
+}
+@media only screen and (max-width: 600px) {
+    .hide-menu,.dropdown {
+        display: none;
+    }
+    .team {
+        justify-content: center;
+        align-items: center;
+    }
+    .team-row2 {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .team-row2 div {
+        width: 100%;
+    }
+    .work {
+        flex-direction: column;
+    }
+    .work div {
+        width: 100%;
+        padding-bottom: 2%;
+    }
+    .prices {
+        padding: 2%;
+    }
+    .plans {
+        flex-direction: column;
+        align-items: center;
+        padding: 1%;
+    }
+    .plan {
+        width: 100%;
+        margin: 2%;
+    }
+}
